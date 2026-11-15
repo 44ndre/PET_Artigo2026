@@ -17,9 +17,14 @@ df2 <- read_xlsx(
 )
 
 
+
+
+
 ff$q40_numero_usp <- as.numeric(ff$q40_numero_usp)
 df2$nusp <- as.numeric(df2$nusp)
 
+ff <- ff %>% filter(!is.na(q40_numero_usp))
+df2 <- df2 %>% filter(!is.na(nusp))
 
 df <- ff %>%
   left_join(df2, by = c("q40_numero_usp" = "nusp")) 
@@ -233,8 +238,6 @@ df %>%
   count(mudou) %>%
   mutate(prop = n / sum(n))
 
-
-library(DescTools)
 
 tab2 <- table(
   factor(df$q35_posicao_espectro_politico, levels = 0:10),
