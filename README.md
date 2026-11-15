@@ -14,5 +14,7 @@ edita oq quiser
 
 qdo acabr salva, na msm aba git clica commit, explica oq mundou, da o ok, clica em push e fim
 
+se for criar novos arquivos, cria sempre dentro da pasta R do projeto. Se quiser cria uma Python tb mas eu *acho* melhor centralizar em R sepa
+
 tutorial do galdino sobre isso:
 https://mgaldino.github.io/estatistica-basica/reprodutibilidade.html#objetivos-do-cap%C3%ADtulo-1
