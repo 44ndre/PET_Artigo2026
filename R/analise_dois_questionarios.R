@@ -1,5 +1,6 @@
 #analise primeiro e segundo questionário 
 #isso aq tudo é exploratório e uma gigantesca chapação vou fazer direito e organizar ainda
+#teste trabalho
 
 
 library(tidyverse)
